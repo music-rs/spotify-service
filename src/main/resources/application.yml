@@ -1,0 +1,43 @@
+#server:
+#  servlet:
+#    context-path: /music-rs
+#  port: 8081
+jasypt:
+  encryptor:
+    password: jit.srem
+
+
+spring:
+  neo4j:
+    #    uri: neo4j://localhost:7687
+    #    database: example
+    #    authentication.username: example
+    #    authentication.password: example
+    uri: ENC(rjY/aKlxNv2znTpJfwH7afUkfhCYMuwISxJ7BusKdLmbjK/MJ4SeT9/36nOIP5i30rj8yQonz9yTjOQkp/Ipce2Av2yvhWH9XNvUKVw1aZM=)
+    authentication.username: ENC(ZCq9jlBSPM1YUwrLkZ1jcLVfnsORZ1l2TMjUkep0eoykVCNPdLYPr3TgOJ1dVNXX)
+    authentication.password: ENC(gFqOGnnzOVwb+J2M7dYKF/5lDnPFlE3liieVq+cH7wPw3Ismqr8m2kDL04v/+ECkVqQAGUZ6ZmPqascGwK+7HmTW0KEHICUHYPexiChaCrU=)
+
+spotify:
+  client:
+    id: ENC(ZbqQro3EO8OtHft5Ubb/2Xfdvy3YhF3KoLTeE99mnVubwK67fMBTkOzMFYx4AZkvsEzdhbZedSOJsCaMyh6SOKfWiM6ulne9SbCP4g/njM0=)
+    secret: ENC(LKYbdO71CQqzlft9OZB67thpb2uhoINdzntv01aC2VJFeUPF0BlgVMl897BnwTWiO860CuKbzxiFoPKs44lzaxcrKEVFDjAeEQYzZMgy1GA=)
+
+
+# Logger configuration
+logging:
+  level:
+    root: info
+    web: debug
+    org.springframework: info
+    org.springframework.data.neo4j: debug
+
+
+#springdoc:
+#  api-docs:
+#    path: /api-docs
+#
+#api:
+#  version: 1.0-SNAPSHOT
+#  server:
+#    url: https://www.srem.com
+#  description: Music events recommendation system
